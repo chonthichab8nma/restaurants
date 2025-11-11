@@ -14,6 +14,8 @@ tabs.forEach(tab => {
     tab.classList.add("active");
 
     const page = tab.dataset.page;
-    content.textContent = pages[page];
+    // content.textContent = pages[page];
+    window.location.href = page + ".html";
+
   });
 });
