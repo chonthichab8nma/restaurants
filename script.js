@@ -5,6 +5,7 @@ const pages = {
   bakery: "💖 รายการโปรดของคุณอยู่ที่นี่~"
 };
 
+
 const tabs = document.querySelectorAll(".tab-item");
 const content = document.getElementById("page-content");
 
