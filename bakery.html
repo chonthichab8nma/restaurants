@@ -5,11 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bakery</title>
 
+    <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <div class="bakery" id="page-bakery">
-    🍪 Welcome to the Bakery Section!
+
+  <!-- nav bar -->
+  <div class="tabbar">
+    <div class="tab-item" data-page="home">
+      <i class="bi bi-house-heart-fill"></i> home
+    </div>
+    <div class="tab-item" data-page="cake">
+      <i class="fa-solid fa-cake-candles"></i> Cake
+    </div>
+    <div class="tab-item" data-page="drink">
+      <i class="bi bi-cup-hot-fill"></i> drink
+    </div>
+    <div class="tab-item active" data-page="bakery">
+      <i class="fa-solid fa-cookie-bite"></i> bakery
+    </div>
+  </div>
+
+  <!-- branner -->
+  <div class="branner" id="page-bakery">
+    <img src="photo/bakeryBranner.jpg" width="500" height="500" alt="Bakery Banner">
+    <h1>Welcome to the Bakery Section!</h1> 
+  </div>
+
+  <!-- item -->
+  <div class="bakery-item">
+    <div class="card-row">
+        <div class="card">
+          <img src="photo/bakeryCroissant.jpg" width="500" height="500" alt="Bakery Banner">
+          <h2>ครัวซองค์ 45 บาท</h2>
+        </div>
+    
+        <div class="card">
+          <img src="photo/bakeryBaguette.jpg" width="500" height="500" alt="Bakery Banner">
+          <h2>บาแก็ต 55 บาท</h2>
+        </div>
+        
+        <div class="card">
+          <img src="photo/bakeryEclairs.jpg" width="500" height="500" alt="Bakery Banner">
+          <h2>เอแคลร์ 50 บาท</h2>
+        </div>
+    </div>
+  </div>
   
 </body>
 </html>

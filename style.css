@@ -68,3 +68,63 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
+
+.branner {
+  position: relative;    
+  width: 100%;
+  height: 300px;          
+  overflow: hidden;         
+}
+
+.branner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  object-position: center;  
+}
+
+.branner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.bakery-items {
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 0 20px; 
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: nowrap;             
+  padding: 0 20px;                
+  margin: 20px 0;
+}
+.card {
+  flex: 0 0 calc((100% / 3) - 13.33px); 
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 10px 0 5px 0;
+}
