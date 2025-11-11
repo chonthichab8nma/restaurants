@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Mitr', sans-serif;
+  background: #fff7f0;
+  color: #5a3e36;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 🍭 Tab Bar ด้านบน */
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #73411F;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #dfc4a7;
+  font-weight: 600;
+  flex: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tab-item i {
+  font-size: 1.8rem;         
+  width: 40px;               
+  height: 40px;
+  display: flex;             
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  line-height: 1;            
+}
+
+.tab-item.active {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+
+.tab-item:hover {
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 40px 20px;
+}
