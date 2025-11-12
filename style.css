@@ -27,6 +27,7 @@ body {
 }
 .tab-item {
   display: flex;
+  text-decoration: none; /* ❌ ลบเส้นใต้ */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -99,7 +100,9 @@ body {
 .bakery-items .cake-items .drink-items {
   max-width: 1200px; 
   margin: 20px auto; 
-  padding: 0 20px;
+  padding: 0 20px; 
+  
+  
 }
 
 .card-row {
@@ -109,7 +112,6 @@ body {
   padding: 0 20px;                
   margin: 20px 0;
   justify-content: center;
-  
 }
 .card {
   flex: 0 0 calc((100% / 3) - 13.33px); 
@@ -257,4 +259,48 @@ body {
   border: 0;
   height: 2px;
   background: #73411F;
+}
+
+.promo-section {
+  max-width: 700px;          /* ✅ ย่อขนาดกรอบให้เล็กลง */
+  margin: 40px auto;         /* ✅ จัดให้อยู่ตรงกลางของหน้า */
+  background-color: #fff7e0; /* สีพื้นหลังโทนอ่อน */
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  color: #4b3f33;
+}
+
+.promo-section h2 {
+  color: #b36b2a;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  color: #a25b1f;
+  font-size: 1.8rem;
+}
+
+.image-group {
+  display: flex;
+  justify-content: center;   /* ✅ รูปอยู่ตรงกลาง */
+  gap: 15px;                 /* ระยะห่างระหว่างรูป */
+  margin-bottom: 15px;
+}
+
+.image-group img {
+  width: 20%;                /* ✅ ขนาดรูปแต่ละภาพเล็กลง */
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+  margin: 5px 0;
+}
+
+.description p {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.6;
 }
