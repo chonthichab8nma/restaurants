@@ -1,4 +1,3 @@
-34
 <!DOCTYPE html>   
 <html>           
 <head>           
@@ -33,4 +32,23 @@
 <mark>
 <sup>(ยกกำลัง)
 <audio>
-          
+<table>
+<tr></tr>
+<td></td>
+<th></th>
+<strong> 
+<button></button>
+<form></form>         
+<label></label>
+<input>
+<select></select>
+<option></option>
+<details></details>
+<summary></summary>
+<blockquote></blockquote>
+<cite></cite>
+<meter></meter>
+<progress></progress>
+<aside></aside>
+<ul></ul>
+<li></li>

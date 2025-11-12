@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เสี่ยงโชคกันเถอะ!</title>
+<head>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body1>
+
+  <h1>🎉 แบบฟอร์มเสี่ยงโชค 🎉</h1>
+
+  <form>
+    <label for="name">ชื่อ:</label>
+    <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+
+    <label for="receipt">tax ID :</label>
+    <input type="text" id="receipt" name="receipt" placeholder="เช่น 12345" required>
+
+    <label for="gender">เพศ:</label>
+    <select id="gender" name="gender" required>
+      <option value="">-- เลือกเพศ --</option>
+      <option value="male">ชาย</option>
+      <option value="female">หญิง</option>
+      <option value="other">ไม่ระบุ</option>
+    </select>
+
+    <button type="submit">ส่งข้อมูล</button>
+  </form>
+  <button class="back-btn" onclick="goBack()">ย้อนกลับหน้าแรก</button>
+    <script src="script.js"></script>
+</body1>
+</html>
