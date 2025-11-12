@@ -325,3 +325,16 @@ body {
   line-height: 1.6;
 }
 
+  table {
+    border-collapse: collapse;  /* รวมเส้นขอบให้ชิดกัน */
+    width: 90%;                 /* ความกว้างของตาราง */
+    margin: 20px auto; 
+    border-radius: 4px;       /* มุมโค้งมน */
+    overflow: hidden;          
+  }
+  td {
+    border: 2px solid #a67c52;
+    padding: 10px;
+    text-align: center;         /* จัดข้อความให้อยู่กลางเซลล์ */
+    background-color: #fff7e0;
+  }
