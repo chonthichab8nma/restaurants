@@ -344,3 +344,35 @@ body {
   td {
     background-color: #fff7e0;
   }
+
+  button {
+    background-color: #f2a65a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #e6893f;
+  }
+
+  .message {
+    font-size: 50px;
+    color: #ff5c8d;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }

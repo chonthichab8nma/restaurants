@@ -18,3 +18,10 @@ tabs.forEach(tab => {
     tab.classList.remove("active");
   }
 });
+function showMessage() {
+      const msg = document.getElementById("message");
+      msg.classList.add("show");
+      setTimeout(() => {
+        msg.classList.remove("show");
+      }, 7000);
+    }
