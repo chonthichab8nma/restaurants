@@ -28,3 +28,7 @@ function showMessage() {
 function goLucky() {
       window.location.href = "lucky.html"; // ✅ ลิงก์ไปหน้า lucky.html
     }
+
+  function goBack() {
+      window.location.href = "index.html"; // ✅ กลับไปหน้า index
+    }
