@@ -15,46 +15,91 @@
 <body>
 
   <!-- nav bar -->
-  <div class="tabbar">
-    <div class="tab-item" data-page="index">
+  <nav class="tabbar">
+    <a class="tab-item" data-page="index">
       <i class="bi bi-house-heart-fill"></i> home
-    </div>
-    <div class="tab-item" data-page="cake">
+    </a>
+    <a class="tab-item" data-page="cake">
       <i class="fa-solid fa-cake-candles"></i> Cake
-    </div>
-    <div class="tab-item" data-page="drink">
+    </a>
+    <a class="tab-item" data-page="drink">
       <i class="bi bi-cup-hot-fill"></i> drink
-    </div>
-    <div class="tab-item active" data-page="bakery">
+    </a>
+    <a class="tab-item active" data-page="bakery">
       <i class="fa-solid fa-cookie-bite"></i> bakery
-    </div>
-  </div>
+    </a>
+  </nav>
 
   <!-- branner -->
-  <div class="branner" id="page-bakery">
+  <header class="branner" id="page-bakery">
     <img src="photo/bakeryBranner.jpg" width="500" height="500" alt="Bakery Banner">
     <h1>Welcome to the Bakery Section!</h1> 
-  </div>
+  </header>
 
   <!-- item -->
-  <div class="bakery-item">
-    <div class="card-row">
+  <section class="bakery-item">
+    <article class="card-row">
         <div class="card">
           <img src="photo/bakeryCroissant.jpg" width="500" height="500" alt="Bakery Banner">
-          <h2>ครัวซองค์ 45 บาท</h2>
+          <h2>ครัวซองค์ <del style="color: red;">55 บาท</del></h2>
+          <h2>Sele <span style="color: red;">49</span> บาท เท่านั้น!!</h2>
         </div>
     
         <div class="card">
           <img src="photo/bakeryBaguette.jpg" width="500" height="500" alt="Bakery Banner">
-          <h2>บาแก็ต 55 บาท</h2>
+          <h2>บาแกต <del style="color: red;">80 บาท</del></h2>
+          <h2>Sele <span style="color: red;">49</span> บาท เท่านั้น!!</h2>
         </div>
         
         <div class="card">
           <img src="photo/bakeryEclairs.jpg" width="500" height="500" alt="Bakery Banner">
-          <h2>เอแคลร์ 50 บาท</h2>
+          <h2>เอแคลร์ <del style="color: red;">120 บาท</del></h2> <h2>Sele <span style="color: red;">49</span> บาท เท่านั้น!!</h2>
         </div>
-    </div>
+    </article>
+  </section>
+
+  <section class="promotion">
+  <h2>Set สุดคุ้ม !</h2>
+  <hr>
+
+  <div class="card-row">
+    <!-- Set bakery -->
+    <article class="card">
+
+      <div class="image-group">
+        <img src="photo/bakeryCroissant.jpg" alt="ครัวซองต์">
+        <div class="plus">+</div>
+        <img src="photo/drinkGreentea.jpg" alt="เค้กช็อกโกแลต">
+      </div>
+
+      <h1><u>ชุดเบเกอรี่เช้า</u></h1>
+      <p>ประกอบด้วย ครัวซองต์เสิร์ฟพร้อมกับมัจฉะลาเต้สุดดดดดดฟิน  !</p>
+      <p><del style="color:red;">79 บาท</del> เหลือ <span style="color:red;"><mark><b>65</b></mark></mark> บาท</span></p>
+
+    </article>
+
+    <!-- set Eclairs -->
+    <article class="card">
+      
+      <div class="image-group">
+        <img src="photo/bakeryEclairs.jpg" alt="โดนัท">
+        <div class="plus">+</div>
+        <img src="photo/drinkCoaco.jpg" alt="บราวนี่">
+      </div>
+
+      <h1><u>ชุดของหวานสุดฟิน<sup>10</sup></u></h1>
+      <p>เอแคลร์นุ่ม ๆ คู่กับโกโก้สุดแสนจะเข้มข้น สายหวานห้ามพลาด !</p>
+      <p><del style="color:red;">89 บาท</del> เหลือ <span style="color:red;"><mark><b>75</b></mark> บาท</span></p>
+
+    </article>
   </div>
+</section>
+
+<p>test <sup>2</sup></p>
+
+  <footer>
+     <p style="text-align: center;">&copy; 2025 GOOD CAFE. All rights reserved.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
