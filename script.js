@@ -25,3 +25,6 @@ function showMessage() {
         msg.classList.remove("show");
       }, 7000);
     }
+function goLucky() {
+      window.location.href = "lucky.html"; // ✅ ลิงก์ไปหน้า lucky.html
+    }
