@@ -12,49 +12,79 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
 
-  <!-- nav bar -->
-  <div class="tabbar">
-    <div class="tab-item" data-page="index">
-      <i class="bi bi-house-heart-fill"></i> home
-    </div>
-    <div class="tab-item" data-page="cake">
-      <i class="fa-solid fa-cake-candles"></i> Cake
-    </div>
-    <div class="tab-item" data-page="drink">
-      <i class="bi bi-cup-hot-fill"></i> drink
-    </div>
-    <div class="tab-item active" data-page="bakery">
-      <i class="fa-solid fa-cookie-bite"></i> bakery
-    </div>
-  </div>
+  <nav class="tabbar">
+    <a  class="tab-item active" data-page="index">
+        <i class="bi bi-house-heart-fill"></i> Home
+    </a>
+    <a  class="tab-item" data-page="cake">
+        <i class="fa-solid fa-cake-candles"></i> Cake
+    </a>
+    <a  class="tab-item" data-page="drink">
+        <i class="bi bi-cup-hot-fill"></i> Drink
+    </a>
+    <a  class="tab-item" data-page="bakery">
+        <i class="fa-solid fa-cookie-bite"></i> Bakery
+    </a>
+</nav>
 
   <!-- branner -->
-  <div class="branner" id="page-bakery">
+  <header class="branner" id="page-bakery">
     <img src="photo/cakeall.jpg" width="500" height="500" alt="Cake Banner">
     <h1>Welcome to the Cake Section!</h1> 
-  </div>
+  </header>
 
   <!-- item -->
-  <div class="cake-items">
+  <section class="cake-items">
     <div class="card-row">
         <div class="card">
           <img src="photo/cake10.jpg" width="500" height="500" alt="cake Banner">
-          <h2>ช้อคโกแลตเค้ก 55 บาท</h2>
+    
+         <h2>ช้อคโกแลตเค้ก <del style="color: red;">55 บาท</del></h2>
+         <h2>Sele <span style="color: red;">49</span> บาท เท่านั้น!!</h2>
         </div>
     
         <div class="card">
           <img src="photo/cake11.jpg" width="500" height="500" alt="cake Banner">
-          <h2>คัพเค้ก 45 บาท</h2>
+          <h2>คัพเค้ก <del style="color: red;">45 บาท</del></h2>
+          <h2>Sele <span style="color: red;">39</span> บาท เท่านั้น!!</h2>
         </div>
         
         <div class="card">
           <img src="photo/cake9.jpg" width="500" height="500" alt="cake Banner">
-          <h2>สตอเบอร์รี่เค้ก 50 บาท</h2>
+          <h2>สตอเบอร์รี่เค้ก <del style="color: red;">65 บาท</del></h2>
+          <h2>Sele <span style="color: red;">55</span> บาท เท่านั้น!!</h2>
         </div>
     </div>
+  </section>
+
+ <section class="promotion">
+  <h2>Set สุดคุ้ม</h2>
+  <hr>
+
+  <div class="card" style="background-color: antiquewhite;">
+    <h1><i>Set ซื้อ 2 ถูกกว่า</i></h1>
+    
+    <div class="image-group">
+      <img src="photo/cake9.jpg" alt="สตอเบอร์รี่เค้ก">
+      <img src="photo/cake10.jpg" alt="ช็อกโกแลตเค้ก">
+    </div>
+
+    <div class="description">
+      <h2>เค้กเซตสุดคุ้ม <del style="color:red;">130 บาท</del></h2>
+      <h2>🎉 ลดเหลือเพียง <span style="color:red;">99 บาทเท่านั้น!</span></h2>
+      <p>รับความอร่อยสองเท่ากับเค้กสตรอเบอร์รี่และช็อกโกแลตสุดเข้มข้น  
+      เหมาะสำหรับแบ่งปันความสุขในทุกโอกาส 💖</p>
+    </div>
   </div>
+  
+</section>
+
+ 
+
+<footer> 
+    <p style="text-align: center;">&copy; 2025 GOOD CAFE. All rights reserved.</p>
+</footer>
   <script src="script.js"></script>
 </body>
 </html>
