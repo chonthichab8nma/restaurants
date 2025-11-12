@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 /* 🍭 Tab Bar ด้านบน */
@@ -100,7 +99,7 @@ body {
 .bakery-items .cake-items .drink-items {
   max-width: 1200px; 
   margin: 20px auto; 
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
 .card-row {
@@ -109,6 +108,8 @@ body {
   flex-wrap: nowrap;             
   padding: 0 20px;                
   margin: 20px 0;
+  justify-content: center;
+  
 }
 .card {
   flex: 0 0 calc((100% / 3) - 13.33px); 
@@ -236,4 +237,24 @@ body {
   }
 }
 
+.promotion{
+  position: relative;
+  
+}
+.promotion h2 {
+  color: #73411F;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 3rem;
+  
 
+}
+.promotion hr{
+ position: absolute;
+  top: 90px; /* ✅ ปรับค่าตามตำแหน่งที่อยากให้เส้นอยู่ */
+  left: 30px;
+  width: calc(100% - 60px); /* กันไม่ให้ชนขอบ */
+  border: 0;
+  height: 2px;
+  background: #73411F;
+}
