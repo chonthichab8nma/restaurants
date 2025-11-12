@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 /* 🍭 Tab Bar ด้านบน */
@@ -59,6 +60,7 @@ body {
   transform: scale(1.05);
 }
 
+
 .content {
   flex: 1;
   display: flex;
@@ -68,6 +70,7 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
+
 
 .branner {
   position: relative;    
@@ -128,3 +131,109 @@ body {
 .card h2 {
   margin: 10px 0 5px 0;
 }
+
+/* GOOD CAFE Layout ใน หน้า index */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px 60px;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 85vh; /* ให้พื้นที่สูงพอ */
+}
+
+/* ฝั่งซ้าย: GOOD CAFE */
+.home-text {
+  flex: 1;
+  min-width: 250px;
+  align-self: flex-start; /* ✅ ดันให้ขึ้นด้านบน */
+  margin-top: 40px;       /* ระยะจากขอบบน */
+}
+
+.home-text h1 {
+  font-size: 10rem;
+  font-weight: 700;
+  color: #73411F;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ฝั่งขวา: เมนูแนะนำ */
+.menu-section {
+  flex: 1.5;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ จัดทั้งหมดให้อยู่กลางแนวตั้ง */
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+  align-self: flex-start;
+
+
+}
+
+.menu-section h2 {
+  color: #73411F;
+  margin: 0 0 25px 0; 
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 0;
+  
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+  max-width: 700px;
+  
+}
+
+.menu-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* ✅ ช่วยให้รูปมีสัดส่วนคงที่ */
+}
+
+.menu-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .home-text {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .home-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .menu-section {
+    padding: 20px 0;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+

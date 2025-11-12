@@ -1,21 +1,20 @@
-const pages = {
-  home: "🍩 ยินดีต้อนรับสู่ร้านขนมหวาน!",
-  cake: "🧁 เมนูขนมของเรา หอม หวาน สดใหม่ทุกวัน!",
-  drink: "🛒 ตะกร้าของคุณ: ยังไม่มีขนมเลย~",
-  bakery: "💖 รายการโปรดของคุณอยู่ที่นี่~"
-};
-
 const tabs = document.querySelectorAll(".tab-item");
-const content = document.getElementById("page-content");
 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-
     const page = tab.dataset.page;
-    // content.textContent = pages[page];
-    window.location.href = page + ".html";
-
+    // ✅ เปลี่ยนหน้าไปยังไฟล์ที่ตรงกับชื่อ data-page
+    window.location.href = `${page}.html`;
   });
+});
+
+// ✅ ทำให้แท็บ active ตรงกับไฟล์ที่เปิดอยู่
+const currentPage = window.location.pathname.split("/").pop().replace(".html", "");
+
+tabs.forEach(tab => {
+  if (tab.dataset.page === currentPage) {
+    tab.classList.add("active");
+  } else {
+    tab.classList.remove("active");
+  }
 });
