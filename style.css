@@ -97,7 +97,7 @@ body {
   text-align: center;
 }
 
-.bakery-items {
+.bakery-items .cake-items .drink-items {
   max-width: 1200px; 
   margin: 20px auto; 
   padding: 0 20px; 
