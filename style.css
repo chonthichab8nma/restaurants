@@ -332,9 +332,15 @@ body {
     border-radius: 4px;       /* มุมโค้งมน */
     overflow: hidden;          
   }
-  td {
-    border: 2px solid #a67c52;
+    th, td {
+    border: 1px solid #d2b48c;
     padding: 10px;
-    text-align: center;         /* จัดข้อความให้อยู่กลางเซลล์ */
+    text-align: center;
+  }
+  th {
+    background-color: #f6c9a1;
+    font-weight: bold;
+  }
+  td {
     background-color: #fff7e0;
   }
