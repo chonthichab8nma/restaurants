@@ -295,6 +295,26 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.image-group1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* ✅ จัดแนวตั้งตรงกลาง */
+  gap: 15px;             /* ระยะห่าง */
+  margin-bottom: 15px;
+}
+
+.image-group1 img {
+  width: 40%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.plus {
+  font-size: 40px;        /* ✅ ขนาดเครื่องหมาย + */
+  font-weight: bold;
+  color: #555;
+}
+
 .description h2 {
   margin: 5px 0;
 }
@@ -304,3 +324,4 @@ body {
   margin-top: 10px;
   line-height: 1.6;
 }
+
