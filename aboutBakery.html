@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Our Bakery</title>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- เมนูนำทาง -->
+<nav class="tabbar">
+  <a  class="tab-item active" data-page="index">
+    <i class="bi bi-house-heart-fill"></i> Home
+  </a>
+  <a  class="tab-item" data-page="cake">
+    <i class="fa-solid fa-cake-candles"></i> Cake
+  </a>
+  <a  class="tab-item" data-page="drink">
+    <i class="bi bi-cup-hot-fill"></i> Drink
+  </a>
+  <a  class="tab-item" data-page="bakery">
+    <i class="fa-solid fa-cookie-bite"></i> Bakery
+  </a>
+  <a  class="tab-item" data-page="aboutBakery">
+    <i class="bi bi-tags-fill"></i> aboutBakery
+    </a>
+</nav>
+
+<audio id="bg-music" autoplay loop>
+  <source src="photo/sound.mp3" type="audio/mpeg">
+</audio>
+
+<main>
+
+    <!-- บทความหลัก -->
+    <article>
+        <h1>About Our Bakery</h1>
+
+        <section>
+            <h2>Our History</h2>
+            <p>Our bakery started in 2010 with a passion for <em>freshly baked goods</em> and love for quality ingredients.</p>
+            <figure>
+                <img src="photo/bakeryBranner.jpg" alt="Bakery Front">
+                <figcaption>Our bakery front in 2010</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Our Special Croissants</h2>
+            <figure>
+                <img src="photo/bakeryCroissant.jpg" alt="Croissant">
+                <figcaption>Flaky, buttery croissants made fresh daily</figcaption>
+            </figure>
+
+            <blockquote>
+                "The croissants here are heavenly!" — <cite>Paris Food Blog</cite>
+            </blockquote>
+
+            <p><small>All ingredients are sourced locally.</small></p>
+
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <dl>
+                <dt>Chef Anna</dt>
+                <dd>Master baker specializing in French pastries.</dd>
+                <dt>Chef Ben</dt>
+                <dd>Expert in bread and sourdough.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Opening Hours</h2>
+            <p>We are open from <time datetime="2025-11-13T08:00">8 AM</time> to <time datetime="2025-11-13T20:00">8 PM</time> daily.</p>
+            <progress value="80" max="100">80%</progress>
+        </section>
+
+        <section>
+            <h2>Interactive Fun</h2>
+            <canvas id="cakeCanvas" width="400" height="200"></canvas>
+            <script>
+                const canvas = document.getElementById('cakeCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#5a3e36';
+                ctx.fillRect(50, 50, 300, 100);
+                ctx.fillStyle = 'white';
+                ctx.fillText('Cake Canvas!', 170, 110);
+            </script>
+        </section>
+
+        <section>
+            <h2>Video Tour</h2>
+            <video controls>
+                <source src="photo/videoBakery.mp4" type="video/mp4">
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>FAQs</h2>
+            <details>
+                <summary>Do you offer gluten-free options?</summary>
+                <p>Yes! We have a variety of gluten-free pastries available daily.</p>
+            </details>
+            <details>
+                <summary>Can I order custom cakes?</summary>
+                <p>Absolutely, please contact us in advance.</p>
+            </details>
+        </section>
+
+        <section class="from">
+
+            <!-- <h2>Contact Us</h2>
+            <address>
+                123 Bakery Street, Sweet Town, USA<br>
+                Email: <a href="mailto:info@bakery.com">info@bakery.com</a><br>
+                Phone: <abbr title="Telephone">Tel</abbr>: +1 234 567 890
+            </address> -->
+
+            <form>
+                <fieldset>
+                    <legend>Subscribe to Newsletter</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <button type="submit">Subscribe</button>
+                    <output name="result" for="name email"></output>
+                </fieldset>
+            </form>
+        </section>
+
+    </article>
+
+    <aside>
+        <h2>Quick Facts</h2>
+        <p><mark>Founded in 2010</mark></p>
+        <p><kbd>Hot Coffee Served</kbd></p>
+        <p><samp>Fresh pastries daily</samp></p>
+        <p><var>Variety of bread types</var></p>
+        <meter value="75" min="0" max="100">75%</meter>
+    </aside>
+
+</main>
+
+
+<dialog open>
+    <p>Welcome to our bakery About page!</p>
+</dialog>
+
+<template id="promoTemplate">
+    <p>Get 10% off your first order!</p>
+</template>
+<script src="script.js"></script>
+
+<footer> 
+    <p style="text-align: center; color: #5a3e36" >&copy; 2025 GOOD CAFE. All rights reserved.</p>
+
+    <address class="address">
+      Written by <a href="mailto:contact@cafechill.com">Good Cafe</a>.<br>
+      Visit us at:<br>
+      <a href="https://chonthichab8nma.github.io/restaurants/">www.GoodCafe.com</a><br>
+      123 Sweet Street, Dessert Town<br>
+      devtuanoi, Thailand 10110
+    </address>
+
+</footer>
+
+</body>
+</html>
