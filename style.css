@@ -483,27 +483,34 @@ cite {
   text-align: center;
 }
 
-figure.branner {
+figure .branner {
   position: relative;
   text-align: center;
   margin: 50px 0;
 }
 
-figure.branner figcaption {
-  position: absolute;
+figure .branner figcaption {
+  position: center;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.5em;
   color: rgb(4, 50, 12);
   padding: 10px 20px;
-  display: inline-block;
-  background: rgba(160, 160, 160, 0.7);
+  /* display: inline-block; */
+  background: #dfc4a785
 }
 a { color: #5a3e36; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h1, h2 { color: #5a3e36; }
+h1, h2 { 
+  color: #5a3e36; 
+}
+
+#aboutBakery{
+  color: #5a3e36;
+  text-align: center;
+}
 
 main {
     display: flex;
@@ -520,8 +527,8 @@ article {
 }
 
 aside {
-    flex: 0 0 25%;
-    background-color: #fff0e0;
+    /* flex: 0 0 25%; */
+    background-color: #dfc4a785;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -543,11 +550,11 @@ figure img {
 
 figure figcaption {
     font-style: italic;
-    margin-top: 10px;
-    background-color: rgba(201, 76, 76, 0.1);
+    margin-top: 10px; /* สร้างช่องว่าง */
+    background-color: #dfc4a785;
     padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
+    border-radius: 2px;
+    /* display: inline-block; เป็นค่าคุณสมบัติ CSS ที่ทำให้องค์ประกอบแสดงผลในบรรทัดเดียวกัน */
 }
 
 blockquote {
@@ -619,24 +626,47 @@ output {
     margin-top: 10px;
 }
 
-mark { background-color: #f0e1d6; color: #5a3e36; padding: 2px 5px; border-radius: 3px; }
-kbd, samp { background-color: #f4f4f4; border-radius: 3px; padding: 2px 5px; color: #5a3e36; }
-var { font-style: italic; color: #5a3e36; }
+mark { 
+  background-color: #73411F;
+  color: #ffffff; 
+  padding: 2px 5px; 
+  border-radius: 3px; 
+}
+
+kbd, samp { 
+  background-color: #f4f4f4; 
+  border-radius: 3px; 
+  padding: 2px 5px; 
+  color: #5a3e36; 
+}
+
+var { 
+  font-style: italic; 
+  color: #5a3e36; 
+}
 
 
 canvas { display: block; margin: 20px auto; border: 1px solid #ccc; }
 
 
-video { display: block; margin: 20px auto; border-radius: 10px; }
+video { 
+  display: block; 
+  max-width: 100%; 
+  border-radius: 10px; }
 
 
 progress, meter {
     width: 100%;
     height: 20px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+
+progress::-webkit-progress-value { background: #bd7560; border-radius: 10px;overflow: hidden; }
+
+progress::-webkit-progress-bar {background-color:  #f0e1d6;}
 
 footer {
     color: white;
@@ -659,10 +689,15 @@ dialog {
     color: #5a3e36;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     main { flex-direction: column; }
-    article, aside { flex: 0 0 100%; padding-right: 0; }
-}
+    article, aside { 
+    background-color: #fae6df;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+} */
 
 .from{
   display: flex;
