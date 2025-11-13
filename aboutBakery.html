@@ -39,21 +39,26 @@
 
     <!-- บทความหลัก -->
     <article>
-        <h1>About Our Bakery</h1>
+        <h1 id="aboutBakery">About Our Bakery</h1>
 
         <section>
             <h2>Our History</h2>
-            <p>Our bakery started in 2010 with a passion for <em>freshly baked goods</em> and love for quality ingredients.</p>
+            <p>Our bakery began its journey in 2010 with a simple dream — to share the joy of freshly baked goods made from the <em>finest ingredients.</em> What started as a <em>small kitchen</em> filled with the comforting aroma of bread and pastries soon grew into a beloved local bakery, known for its warmth, care, and a touch of <em>homemade happiness</em> in every bite.
+From day one, we’ve believed that good baking starts with love — love for the craft, for the ingredients, and for the people we serve. Every loaf, cake, and cookie that comes out of our oven carries a story — a story of patience, passion, and dedication. We take pride in handcrafting each item with care, ensuring that every customer feels the comfort of home the moment they taste our creations.
+Over the years, our bakery has become more than just a place to buy bread — it has become a place where memories are made. Whether it’s your <em>morning coffee and croissant</em>, a birthday cake for someone special, or a simple sweet treat after a long day, we’re here to make every moment a little more delightful.
+At our bakery, baking is not just our business — it’s our love language. And we’re grateful to share that love with you, one bite at a time.</p>
             <figure>
-                <img src="photo/bakeryBranner.jpg" alt="Bakery Front">
+                <img style="width:300px;height:300px;" src="photo/bakeryBranner.jpg" alt="Bakery Front">
                 <figcaption>Our bakery front in 2010</figcaption>
             </figure>
         </section>
 
+
+
         <section>
             <h2>Our Special Croissants</h2>
             <figure>
-                <img src="photo/bakeryCroissant.jpg" alt="Croissant">
+                <img style="width:300px;height:300px;" src="photo/bakeryCroissant.jpg" alt="Croissant">
                 <figcaption>Flaky, buttery croissants made fresh daily</figcaption>
             </figure>
 
@@ -66,7 +71,7 @@
         </section>
 
         <section>
-            <h2>Our Team</h2>
+            <br><h2>Our Team</h2>
             <dl>
                 <dt>Chef Anna</dt>
                 <dd>Master baker specializing in French pastries.</dd>
@@ -76,13 +81,13 @@
         </section>
 
         <section>
-            <h2>Opening Hours</h2>
+            <br><h2>Opening Hours</h2>
             <p>We are open from <time datetime="2025-11-13T08:00">8 AM</time> to <time datetime="2025-11-13T20:00">8 PM</time> daily.</p>
             <progress value="80" max="100">80%</progress>
         </section>
 
         <section>
-            <h2>Interactive Fun</h2>
+            <br><h2>Interactive Fun</h2>
             <canvas id="cakeCanvas" width="400" height="200"></canvas>
             <script>
                 const canvas = document.getElementById('cakeCanvas');
@@ -95,7 +100,7 @@
         </section>
 
         <section>
-            <h2>Video Tour</h2>
+            <br><h2>Video Tour</h2>
             <video controls>
                 <source src="photo/videoBakery.mp4" type="video/mp4">
                 <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
@@ -104,7 +109,7 @@
         </section>
 
         <section>
-            <h2>FAQs</h2>
+            <br><h2>FAQs</h2>
             <details>
                 <summary>Do you offer gluten-free options?</summary>
                 <p>Yes! We have a variety of gluten-free pastries available daily.</p>
@@ -115,33 +120,33 @@
             </details>
         </section>
 
-        <section class="from">
+        <!-- <section class="from">
 
-            <!-- <h2>Contact Us</h2>
+            <h2>Contact Us</h2>
             <address>
                 123 Bakery Street, Sweet Town, USA<br>
                 Email: <a href="mailto:info@bakery.com">info@bakery.com</a><br>
                 Phone: <abbr title="Telephone">Tel</abbr>: +1 234 567 890
-            </address> -->
+            </address>
 
             <form>
                 <fieldset>
                     <legend>Subscribe to Newsletter</legend>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
+                    <input type="text" id="name" name="name"><br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
+                    <input type="email" id="email" name="email"><br>
                     <button type="submit">Subscribe</button>
                     <output name="result" for="name email"></output>
                 </fieldset>
             </form>
-        </section>
+        </section> -->
 
     </article>
 
     <aside>
         <h2>Quick Facts</h2>
-        <p><mark>Founded in 2010</mark></p>
+        <p><mark>Founded in 2010</mark></p> 
         <p><kbd>Hot Coffee Served</kbd></p>
         <p><samp>Fresh pastries daily</samp></p>
         <p><var>Variety of bread types</var></p>
@@ -151,9 +156,9 @@
 </main>
 
 
-<dialog open>
+<!-- <dialog open>
     <p>Welcome to our bakery About page!</p>
-</dialog>
+</dialog> -->
 
 <template id="promoTemplate">
     <p>Get 10% off your first order!</p>
